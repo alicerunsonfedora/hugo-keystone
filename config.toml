@@ -1,3 +1,37 @@
-baseURL = "http://example.org/"
+baseurl = "https://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Keystone Template"
+theme = "hugo-natrium-theme"
+preserveTaxonomyNames = true
+rssLimit = 10
+paginate = 10
+pygmentsCodefences = true
+pygmentsStyle = "native"
+
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+
+[permalinks]
+    post = "/:slug/"
+    page = "/:slug/"
+
+[[menu.main]]
+    name = "Resume"
+    url = "/my-resume/"
+    weight = -110
+
+[[menu.main]]
+    name = "Cover Letter"
+    url = "/cover-letter/"
+    weight = -120
+
+
+[params]
+    description = ""
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
